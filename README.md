@@ -8,7 +8,7 @@ The system will record details such as the car's speed and gear positions. Addit
 *Initial Setup:*
  Navigate to the CBB_EEPROM_Loader folder and run the Makefile to initialize the external EEPROM with default values.
  Next, run the Makefile in the CBB_Main folder to start executing the project on the PIC18F4580 microcontroller board. An onboard CLCD screen serves as an interactive 
- interface.
+ interface.\n
 *Dashboard Interface:*
  Upon startup, a dashboard screen is displayed, showing the current time, the last recorded event, and the vehicle speed.
  Vehicle speed can be adjusted using the onboard potentiometer (POT).
