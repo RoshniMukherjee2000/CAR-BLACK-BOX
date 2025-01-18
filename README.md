@@ -13,18 +13,23 @@ The system will record details such as the car's speed and gear positions. Addit
  *Dashboard Interface:*
  Upon startup, a dashboard screen is displayed, showing the current time, the last recorded event, and the vehicle speed.
  Vehicle speed can be adjusted using the onboard potentiometer (POT).
-The following Matrix keys are used for event registration:
+
+ The following Matrix keys are used for event registration:
  SW1: Registers a Gear UP event.
  SW2: Registers a Gear DOWN event.
  SW3: Registers a Collision event.
  Events are stored in the external EEPROM regardless of the current display mode. However, only certain events are shown on the dashboard. Other events can be viewed through 
  the "View Log" or "Download Log" options.
- Password Access and Security:
+
   View Log: Displays the last 10 events recorded in the data log stored in the external EEPROM.
+  
   Clear Log: Clears the data log from the external EEPROM. After this action, no events will be visible in the View Log mode, and scrolling becomes ineffective.
+ 
   Download Log: Allows the data log to be downloaded via UART communication.
+
  The user must connect the microcontroller board to a PC using a serial terminal like Minicom or PuTTY.
  Upon long pressing the Download Log option, the data log is displayed on the serial monitor.
+
  Navigation:
   Use Matrix SW11 for scrolling up and returning to the Log Menu or Dashboard:
   Long press Matrix SW11 to return to the Log Menu from a specific option.
